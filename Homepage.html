@@ -1,0 +1,345 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCENT SECRETS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="perfume-database.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="navbar" id="top">
+    <a href="#home" class="brand-lockup" aria-label="Scent Secrets home">
+        <img src="scent-secrets-logo.svg" alt="" aria-hidden="true">
+        <span class="brand-text">
+            <span class="brand-name">Scent Secrets</span>
+            <span class="brand-tagline">Find your signature spray</span>
+        </span>
+    </a>
+
+    <div class="nav-shell">
+        <a href="#home" class="home-btn nav-link">HOME</a>
+        <a href="#tips" class="nav-link">TIPS & GUIDES</a>
+        <a href="#types" class="nav-link">PERFUME TYPES</a>
+        <a href="#families" class="nav-link">SCENT FAMILIES</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+    </div>
+
+    <div class="nav-right">
+        <input type="text" id="searchInput" placeholder="Search perfume...">
+    </div>
+</header>
+
+<div class="perfume-bg" aria-hidden="true">
+    <img class="bg-photo bg-photo-1" src="sauvage.jpg" alt="">
+    <img class="bg-photo bg-photo-2" src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=1200&q=80" alt="">
+    <img class="bg-photo bg-photo-3" src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=80" alt="">
+    <img class="bg-photo bg-photo-4" src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1200&q=80" alt="">
+</div>
+
+<main>
+    <section class="section hero" id="home">
+        <div class="bg-orb orb-1"></div>
+        <div class="bg-orb orb-2"></div>
+
+        <div class="hero-copy reveal">
+            <p class="eyebrow">Signature Feature</p>
+            <h1>
+                WHERE YOUR SCENT SPEAKS -
+                SPRAY, SAVOR, SHINE.
+            </h1>
+
+            <div class="description-box">
+                <p>
+                    Dior Sauvage Eau de Parfum (EDP) is a captivating, intense, and refined fragrance
+                    for men, launched in 2018 as a richer interpretation of the original Sauvage.
+                    It builds on the raw freshness of its predecessor, offering a more complex and
+                    enveloping scent profile with oriental and vanilla facets.
+                </p>
+
+                <p>
+                    The fragrance opens with a vibrant burst of fresh, spicy Calabrian bergamot
+                    and pepper. This leads into an aromatic heart featuring lavender, star anise,
+                    and nutmeg, adding warmth and depth. The base settles into a smooth, sensual,
+                    and earthy finish with notes of ambroxan, vanilla, and patchouli.
+                </p>
+            </div>
+        </div>
+
+        <div class="hero-image reveal">
+            <div class="image-circle">
+                <img src="sauvage.jpg" alt="Dior Sauvage Perfume">
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-card reveal" id="tips">
+        <h2 class="section-title">TIPS & GUIDES</h2>
+        <p class="section-lead">
+            Discover simple yet effective ways to make the most out of your favorite fragrance.
+            From proper application tips and common mistakes to avoid, explore a range of helpful
+            insights to enhance your everyday scent experience.
+        </p>
+        <p class="section-lead">
+            Continue exploring more fragrance tips to build your perfect collection and match
+            your scent with seasons and occasions.
+        </p>
+
+        <hr class="divider">
+
+        <div class="tips-grid">
+            <article class="tips-section">
+                <h3>COMMON PERFUME MISTAKES TO AVOID</h3>
+                <ul>
+                    <li>Rubbing wrists after applying</li>
+                    <li>Over spraying</li>
+                    <li>Using the wrong perfume for wrong occasions/seasons</li>
+                </ul>
+            </article>
+
+            <article class="tips-section">
+                <h3>PERFUME APPLICATION TIPS</h3>
+                <ul>
+                    <li>Apply on pulse points</li>
+                    <li>How much perfume do we need to apply</li>
+                    <li>Layering scent</li>
+                </ul>
+            </article>
+
+            <article class="tips-section">
+                <h3>PERFUME STORAGE & MAINTENANCE</h3>
+                <ul>
+                    <li>Avoid sunlight & heat</li>
+                    <li>Keep cap tightly closed</li>
+                    <li>Store at room temperature</li>
+                </ul>
+            </article>
+
+            <article class="tips-section">
+                <h3>TIPS FOR BUILDING A PERFUME COLLECTION</h3>
+                <ul>
+                    <li>Invest in signature perfume</li>
+                    <li>Start with versatile scents</li>
+                </ul>
+            </article>
+
+            <article class="tips-section">
+                <h3>SEASONAL & OCCASION TIPS</h3>
+                <ul>
+                    <li>Light, fresh scents for summer</li>
+                    <li>Warm, sweet scents for winter</li>
+                    <li>Office-friendly daily scents</li>
+                    <li>Bold scent for special events</li>
+                </ul>
+            </article>
+        </div>
+    </section>
+
+    <section class="section section-card reveal" id="types">
+        <h2 class="section-title">PERFUME TYPES</h2>
+
+        <p class="section-lead">
+            Discover the different types of fragrances categorized by concentration and longevity.
+            Understanding each type helps you choose the right scent for your lifestyle, preferences,
+            and occasions. From light and refreshing mists to rich and long-lasting parfums, explore
+            the world of fragrance and find your perfect match.
+        </p>
+
+        <hr class="divider">
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header" type="button">
+                    Parfum / Extrait <span>+</span>
+                </button>
+                <div class="accordion-content">
+                    Parfum, also known as Extrait, has the highest fragrance concentration among all types.
+                    It is very rich and intense, usually lasting more than 8 hours on the skin.
+                    Because of its strength, only a small amount is needed for all-day wear.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button">
+                    Eau de Parfum (EDP) <span>+</span>
+                </button>
+                <div class="accordion-content">
+                    Eau de Parfum has a high concentration of fragrance oils, making it strong and long-lasting.
+                    It typically stays on the skin for about 6-8 hours.
+                    This type is ideal for evening wear or special occasions.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button">
+                    Eau de Toilette (EDT) <span>+</span>
+                </button>
+                <div class="accordion-content">
+                    Eau de Toilette is lighter and fresher compared to EDP.
+                    It usually lasts around 3-5 hours, making it suitable for daily or casual use.
+                    It gives a noticeable scent without being too overpowering.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button">
+                    Eau de Cologne (EDC) <span>+</span>
+                </button>
+                <div class="accordion-content">
+                    Eau de Cologne has a lower fragrance concentration, making it light and refreshing.
+                    It typically lasts 2-3 hours on the skin.
+                    This type is perfect for hot weather or quick reapplication throughout the day.
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button">
+                    Body Mist / Spray <span>+</span>
+                </button>
+                <div class="accordion-content">
+                    Body mists have the lightest concentration among all fragrance types.
+                    They provide a subtle scent that usually lasts 1-2 hours.
+                    They are ideal for a quick refresh or layering with other fragrances.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-card reveal" id="families">
+        <h2 class="section-title">SCENT FAMILIES</h2>
+
+        <p class="section-lead">
+            Explore the world of fragrance through its main scent families and subfamilies.
+            Each family represents a unique personality from fresh and vibrant to warm and sensual
+            while subfamilies reveal the subtle variations within them.
+        </p>
+
+        <hr class="divider">
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <button class="accordion-header" type="button">
+                    Floral Family <span>+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Floral fragrances are inspired by flowers and are often soft, romantic, and elegant.</p>
+                    <ul>
+                        <li><strong>Single Floral (Soliflore)</strong> - Focuses on one dominant flower (e.g., rose or jasmine).</li>
+                        <li><strong>Floral Bouquet</strong> - A blend of multiple floral notes.</li>
+                        <li><strong>Floral Fruity</strong> - Floral base mixed with sweet fruit notes.</li>
+                        <li><strong>Floral Green</strong> - Floral scents with fresh, leafy accents.</li>
+                        <li><strong>Floral Oriental</strong> - Florals blended with warm spices or amber.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button">
+                    Fresh Family <span>+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Fresh fragrances are light, clean, and energizing.</p>
+                    <ul>
+                        <li><strong>Citrus</strong> - Lemon, bergamot, orange, grapefruit.</li>
+                        <li><strong>Aquatic (Marine)</strong> - Ocean breeze, watery, airy notes.</li>
+                        <li><strong>Green</strong> - Grass, leaves, herbs.</li>
+                        <li><strong>Aromatic</strong> - Lavender, rosemary, sage (often used in men's scents).</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button">
+                    Woody Family <span>+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Woody fragrances are warm, earthy, and grounding.</p>
+                    <ul>
+                        <li><strong>Woody Dry</strong> - Cedarwood, vetiver, sandalwood.</li>
+                        <li><strong>Woody Mossy (Chypre)</strong> - Woody base with oakmoss and citrus.</li>
+                        <li><strong>Woody Spicy</strong> - Woods blended with pepper or spices.</li>
+                        <li><strong>Woody Oriental</strong> - Woods mixed with amber and vanilla.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button">
+                    Oriental (Amber) Family <span>+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Oriental fragrances are rich, warm, and sensual.</p>
+                    <ul>
+                        <li><strong>Soft Oriental</strong> - Amber mixed with light florals.</li>
+                        <li><strong>Oriental Spicy</strong> - Cinnamon, clove, cardamom.</li>
+                        <li><strong>Oriental Woody</strong> - Deep woods with amber warmth.</li>
+                        <li><strong>Oriental Vanilla (Gourmand)</strong> - Sweet, dessert-like warmth.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <button class="accordion-header" type="button">
+                    Gourmand Family <span>+</span>
+                </button>
+                <div class="accordion-content">
+                    <p>Gourmand scents are inspired by edible notes and sweet treats.</p>
+                    <ul>
+                        <li><strong>Vanilla-Based</strong> - Creamy, sweet vanilla core.</li>
+                        <li><strong>Chocolate/Coffee</strong> - Rich, roasted, dessert-like.</li>
+                        <li><strong>Caramel/Sugary</strong> - Warm, candy-like sweetness.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-card reveal" id="about">
+        <h2 class="section-title">About Scent Secrets</h2>
+        <p class="section-lead">
+            Scent Secrets is your ultimate guide to discovering the world of perfumes.
+            We provide tips, insights, and fragrance knowledge to help you choose, apply,
+            and enjoy perfumes that reflect your personality.
+        </p>
+        <p class="section-lead">
+            Our mission is to make the art of perfumery accessible, enjoyable,
+            and fun for everyone from beginners to fragrance enthusiasts.
+        </p>
+
+        <hr class="divider">
+
+        <div class="contact-section">
+            <h3>Contact Us</h3>
+            <p>
+                Got questions or suggestions? We'd love to hear from you!
+                Fill out the form below and we'll get back to you as soon as possible.
+            </p>
+
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+            <div id="form-success" style="display:none;">
+                Thank you for reaching out! We'll get back to you soon.
+            </div>
+        </div>
+    </section>
+</main>
+
+</body>
+</html>
